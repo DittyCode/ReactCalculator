@@ -1,3 +1,5 @@
+import { buttons } from '../../../data/display-buttons';
+
 const Display = () => {
 	return (
 		<div className='display'>

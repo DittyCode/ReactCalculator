@@ -1,6 +1,31 @@
-@mixin flex-mother($flexDir:row,$align:center,$justify:center){
-    display:flex;
-    flex-direction:$flexDir;
-    align-items:$align;
-    justify-content:$justify;
+@mixin flex-mother($flexDir: row, $align: center, $justify: center) {
+	display: flex;
+	flex-direction: $flexDir;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin border-radius($a: 50%, $b: 50%, $c: 50%, $d: 50%) {
+	border-radius: $a $b $c $d;
+}
+
+@mixin grid-mother($columns: 0, $rows: 0, $gap: 0) {
+	display: grid;
+	grid-template-columns: repeat($columns, 1fr);
+	grid-template-rows: repeat($rows, 1fr);
+	grid-gap: $gap;
+	place-items: center;
+}
+
+@mixin button-behind($border, $cursor, $bgc) {
+	border: $border;
+	cursor: $cursor;
+	@if ($bgc) {
+		background-color: $bgc;
+	}
 }

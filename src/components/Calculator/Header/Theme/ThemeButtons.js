@@ -1,13 +1,16 @@
 import ThemeBall from './ThemeBall';
 import ThemeParagraphs from './ThemeParagraphs';
 import { useContext } from 'react';
+import { saveToStorage } from '../../../../storage/storage';
 import ThemeProvider from '../../../../context/theme-ctx';
 
-const ThemeClickable = () => {
+const ThemeButtons = () => {
 	const { theme, setTheme } = useContext(ThemeProvider);
 
 	const handleClick = ({ target }) => {
-		setTheme(target.dataset.theme);
+		const targetData = target.dataset.theme;
+		saveToStorage(targetData);
+		setTheme(targetData);
 	};
 
 	return (
@@ -26,4 +29,4 @@ const ThemeClickable = () => {
 	);
 };
 
-export default ThemeClickable;
+export default ThemeButtons;

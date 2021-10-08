@@ -1,5 +1,9 @@
 .main {
-	height: 100vh;
 	@include flex-mother();
+	height: 100vh;
 	color: white;
+	@media (max-width: 440px) {
+		align-items: flex-start;
+		overflow: hidden;
+	}
 }

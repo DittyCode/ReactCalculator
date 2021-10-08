@@ -1,7 +1,7 @@
 .header {
-	height: 15vh;
 	@include flex-mother();
 	justify-content: space-between;
+	height: 15vh;
 	&__heading {
 		font-size: 3rem;
 	}

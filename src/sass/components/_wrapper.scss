@@ -1,5 +1,7 @@
 .calculator {
-	width: 50%;
+	@include size(50%, 70vh);
 	min-width: 400px;
-	height: 70vh;
+	@media (max-width: 440px) {
+		min-width: 350px;
+	}
 }
