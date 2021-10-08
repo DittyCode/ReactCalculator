@@ -1,0 +1,93 @@
+.main.first {
+	background-color: map-get($firstThemeColors, bgc);
+	color: map-get($firstThemeColors, bgcKey);
+	.result {
+		background-color: map-get($firstThemeColors, screen);
+	}
+	.display {
+		background-color: map-get($firstThemeColors, themeKeypad);
+	}
+	.theme__ball {
+		background-color: map-get($firstThemeColors, bgcEqual);
+	}
+	.theme__switcher {
+		background-color: map-get($firstThemeColors, themeKeypad);
+	}
+	.display__btn {
+		background-color: map-get($firstThemeColors, bgcKey);
+		box-shadow: 0 3px 0 0 map-get($firstThemeColors, shadowKey);
+		color: map-get($firstThemeColors, keyText);
+		&.action {
+			color: map-get($firstThemeColors, actionKeyText);
+			background-color: map-get($firstThemeColors, bgcActionKey);
+			box-shadow: 0 3px 0 0 map-get($firstThemeColors, shadowActionKey);
+		}
+		&.equal {
+			background-color: map-get($firstThemeColors, bgcEqual);
+			box-shadow: 0 3px 0 0 map-get($firstThemeColors, shadowEqual);
+			color: map-get($firstThemeColors, actionKeyText);
+		}
+	}
+}
+.main.second {
+	background-color: map-get($secondThemeColors, bgc);
+	color: map-get($secondThemeColors, keyText);
+	.result {
+		background-color: map-get($secondThemeColors, screen);
+	}
+	.display {
+		background-color: map-get($secondThemeColors, themeKeypad);
+	}
+	.theme__ball {
+		background-color: map-get($secondThemeColors, bgcEqual);
+	}
+	.theme__switcher {
+		background-color: map-get($secondThemeColors, themeKeypad);
+	}
+	.display__btn {
+		background-color: map-get($secondThemeColors, bgcKey);
+		box-shadow: 0 3px 0 0 map-get($secondThemeColors, shadowKey);
+		color: map-get($secondThemeColors, keyText);
+		&.action {
+			color: map-get($secondThemeColors, actionKeyText);
+			background-color: map-get($secondThemeColors, bgcActionKey);
+			box-shadow: 0 3px 0 0 map-get($secondThemeColors, shadowActionKey);
+		}
+		&.equal {
+			background-color: map-get($secondThemeColors, bgcEqual);
+			box-shadow: 0 3px 0 0 map-get($secondThemeColors, shadowEqual);
+			color: map-get($secondThemeColors, actionKeyText);
+		}
+	}
+}
+.main.third {
+	background-color: map-get($thirdThemeColors, bgc);
+	color: map-get($thirdThemeColors, keyText);
+	.result {
+		background-color: map-get($thirdThemeColors, screen);
+	}
+	.display {
+		background-color: map-get($thirdThemeColors, themeKeypad);
+	}
+	.theme__ball {
+		background-color: map-get($thirdThemeColors, bgcEqual);
+	}
+	.theme__switcher {
+		background-color: map-get($thirdThemeColors, themeKeypad);
+	}
+	.display__btn {
+		background-color: map-get($thirdThemeColors, bgcKey);
+		box-shadow: 0 3px 0 0 map-get($thirdThemeColors, shadowKey);
+		color: map-get($thirdThemeColors, keyText);
+		&.action {
+			color: map-get($thirdThemeColors, actionKeyText);
+			background-color: map-get($thirdThemeColors, bgcActionKey);
+			box-shadow: 0 3px 0 0 map-get($thirdThemeColors, shadowActionKey);
+		}
+		&.equal {
+			background-color: map-get($thirdThemeColors, bgcEqual);
+			box-shadow: 0 3px 0 0 map-get($thirdThemeColors, shadowEqual);
+			color: map-get($thirdThemeColors, actionKeyText);
+		}
+	}
+}

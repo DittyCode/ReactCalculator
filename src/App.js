@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Wrapper from './components/UI/Wrapper/Wrapper';
+import Header from './components/Calculator/Header/Header';
+import Display from './components/Calculator/Display/Display';
+import PanelResult from './components/Calculator/PanelResult/PanelResult';
+import ThemeContext from './context/theme-ctx';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [theme, setTheme] = useState('first');
+
+	return (
+		<ThemeContext.Provider value={{ theme, setTheme }}>
+			<Wrapper name={theme}>
+				<Header />
+				<PanelResult />
+				<Display />
+			</Wrapper>
+		</ThemeContext.Provider>
+	);
 }
 
 export default App;

@@ -1,0 +1,48 @@
+$fontFamily: 'Spartan', sans-serif;
+$fontWeights: (
+	normal: 400,
+	main: 700,
+);
+
+$firstThemeColors: (
+	bgc: hsl(222, 26%, 31%),
+	themeKeypad: hsl(223, 31%, 20%),
+	screen: hsl(224, 36%, 15%),
+	bgcActionKey: hsl(225, 21%, 49%),
+	shadowActionKey: hsl(224, 28%, 35%),
+	bgcEqual: hsl(6, 63%, 50%),
+	shadowEqual: hsl(6, 70%, 34%),
+	bgcKey: hsl(30, 25%, 89%),
+	shadowKey: hsl(28, 16%, 65%),
+	keyText: hsl(221, 14%, 31%),
+	actionKeyText: hsl(0, 0, 100%),
+);
+
+$secondThemeColors: (
+	bgc: hsl(0, 0%, 90%),
+	themeKeypad: hsl(0, 5%, 81%),
+	screen: hsl(0, 0%, 93%),
+	bgcActionKey: hsl(185, 42%, 37%),
+	shadowActionKey: hsl(185, 58%, 25%),
+	bgcEqual: hsl(25, 98%, 40%),
+	shadowEqual: hsl(25, 99%, 27%),
+	bgcKey: hsl(45, 7%, 89%),
+	shadowKey: hsl(35, 11%, 61%),
+	keyText: hsl(60, 10%, 19%),
+	actionKeyText: hsl(0, 0, 100%),
+);
+
+$thirdThemeColors: (
+	bgc: hsl(268, 75%, 9%),
+	themeKeypad: hsl(268, 71%, 12%),
+	screen: hsl(268, 71%, 12%),
+	bgcActionKey: hsl(281, 89%, 26%),
+	shadowActionKey: hsl(285, 91%, 52%),
+	bgcEqual: hsl(176, 100%, 44%),
+	shadowEqual: hsl(177, 92%, 70%),
+	bgcKey: hsl(268, 47%, 21%),
+	shadowKey: hsl(290, 70%, 36%),
+	keyText: hsl(52, 100%, 62%),
+	actionKeyText: hsl(0, 0, 100%),
+	equalKeyText: hsl(198, 20%, 13%),
+);
