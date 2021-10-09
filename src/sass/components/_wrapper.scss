@@ -3,6 +3,7 @@
 	@include size(50%, 700px);
 	min-width: 400px;
 	@media (max-width: 440px) {
+		padding: 1em;
 		min-width: 350px;
 	}
 }
