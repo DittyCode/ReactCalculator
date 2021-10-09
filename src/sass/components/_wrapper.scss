@@ -1,5 +1,6 @@
 .calculator {
-	@include size(50%, 70vh);
+	position: relative;
+	@include size(50%, 700px);
 	min-width: 400px;
 	@media (max-width: 440px) {
 		min-width: 350px;

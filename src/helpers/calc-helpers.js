@@ -7,9 +7,10 @@ export const mathOperatorsArray = el => {
 };
 
 export const mathOperatorsItems = item => {
-	return splittingItem(item).filter(
-		(el, id) => mathOperatorsArray(el) && id !== 0
+	console.log(
+		splittingItem(item).filter((el, id) => mathOperatorsArray(el) && id !== 0)
 	);
+	return splittingItem(item).filter((el, id) => mathOperatorsArray(el));
 };
 
 export const sliceFromTo = (item, from, to) => {
