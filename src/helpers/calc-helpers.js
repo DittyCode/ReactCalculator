@@ -7,10 +7,9 @@ export const mathOperatorsArray = el => {
 };
 
 export const mathOperatorsItems = item => {
-	console.log(
-		splittingItem(item).filter((el, id) => mathOperatorsArray(el) && id !== 0)
+	return splittingItem(item).filter(
+		(el, id) => mathOperatorsArray(el) && id !== 0
 	);
-	return splittingItem(item).filter((el, id) => mathOperatorsArray(el));
 };
 
 export const sliceFromTo = (item, from, to) => {
@@ -26,3 +25,6 @@ export const notValidNumber = num => Number.isNaN(num);
 
 export const numberFixed = num =>
 	Number.isInteger(num) ? num : num.toFixed(2);
+
+export const preventInitOperator = (item, value) =>
+	!item.length && value !== '-';

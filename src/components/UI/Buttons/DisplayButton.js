@@ -5,6 +5,7 @@ import {
 	sliceFromTo,
 	notValidNumber,
 	numberFixed,
+	preventInitOperator,
 } from '../../../helpers/calc-helpers';
 import CalcContext from '../../../context/calc-ctx';
 
@@ -12,6 +13,8 @@ const DisplayButton = ({ value, name, type }) => {
 	const { result, setResult } = useContext(CalcContext);
 
 	const validResultInput = () => {
+		if (preventInitOperator(result, value)) return;
+
 		if (!mathOperatorsItems(result).length) {
 			setResult(result => result + value);
 		}
@@ -26,11 +29,11 @@ const DisplayButton = ({ value, name, type }) => {
 	};
 
 	const getValues = () => {
-		const operatorIdx = result.indexOf(mathOperatorsItems(result)[0]);
+		const operatorIdx = result.lastIndexOf(mathOperatorsItems(result)[0]);
 
 		const firstValue = sliceFromTo(result, 0, operatorIdx);
 		const secondValue = sliceFromTo(result, operatorIdx + 1);
-
+		console.log(firstValue, secondValue);
 		return { firstValue, secondValue };
 	};
 
@@ -43,6 +46,7 @@ const DisplayButton = ({ value, name, type }) => {
 			case '+':
 				return numberFixed(firstValue + secondValue);
 			case '-':
+				console.log(numberFixed(firstValue + secondValue));
 				return numberFixed(firstValue - secondValue);
 			case 'x':
 				return numberFixed(firstValue * secondValue);
