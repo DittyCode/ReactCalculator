@@ -4,6 +4,7 @@ import {
 	mathOperatorsArray,
 	sliceFromTo,
 	notValidNumber,
+	numberFixed,
 } from '../../../helpers/calc-helpers';
 import CalcContext from '../../../context/calc-ctx';
 
@@ -40,13 +41,13 @@ const DisplayButton = ({ value, name, type }) => {
 
 		switch (mathOperatorsItems(result)[0]) {
 			case '+':
-				return (firstValue + secondValue).toFixed();
+				return numberFixed(firstValue + secondValue);
 			case '-':
-				return (firstValue - secondValue).toFixed();
+				return numberFixed(firstValue - secondValue);
 			case 'x':
-				return (firstValue * secondValue).toFixed();
+				return numberFixed(firstValue * secondValue);
 			case '/':
-				return (firstValue / secondValue).toFixed();
+				return numberFixed(firstValue / secondValue);
 			default:
 				console.log('dont have this math operator');
 				break;
